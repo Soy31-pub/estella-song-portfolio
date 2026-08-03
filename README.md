@@ -8,7 +8,7 @@ Published with GitHub Pages.
 
 ## Editing
 
-- `index.html` contains the personal welcome page, About, experience timeline and six-brand work wall.
+- `index.html` contains the visual V2 homepage: portrait-film placeholders, outcome proof strip, tiered case gallery, strategic approach, About, compact market journey and contact.
 - `ainote.html` contains the AINOTE Korea GTM, creative strategy and social-commerce case study.
 - `gucci.html` contains the Gucci Cruise 2024 Seoul case study.
 - `adobe.html` contains the Adobe Korea culturalized growth and aespa × Premiere Pro case study.
@@ -17,5 +17,7 @@ Published with GitHub Pages.
 - `netflix.html` contains the Netflix young-teen audience intelligence and social launch-planning case study.
 - `styles.css` contains the shared black-and-white editorial design system.
 - `ainote-product.jpg` and `ainote-social.jpg` contain the selected AINOTE assets.
+
+Visible `[TBD]` labels in `index.html` intentionally mark the portrait film, working imagery, case cover media, testimonial and résumé URL still to be supplied.
 
 Contact: [estellasong31@gmail.com](mailto:estellasong31@gmail.com) · [LinkedIn](https://www.linkedin.com/in/soysong/)
