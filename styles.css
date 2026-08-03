@@ -1177,7 +1177,7 @@ footer {
   transition: background 180ms ease, color 180ms ease;
 }
 
-.case-index-card + .case-index-card {
+.case-index-card:nth-child(even) {
   border-left: 1px solid var(--hairline);
 }
 
@@ -1627,6 +1627,119 @@ footer {
   font-style: normal;
 }
 
+/* Loewe Korea case */
+.loewe-hero,
+.netflix-hero {
+  grid-template-columns: minmax(0, 1.34fr) minmax(330px, 0.66fr);
+}
+
+.loewe-hero h1,
+.netflix-hero h1 {
+  max-width: 1060px;
+  font-size: clamp(3.7rem, 5.75vw, 6.2rem);
+}
+
+.loewe-stage,
+.netflix-stage {
+  width: 88%;
+  aspect-ratio: 0.82;
+  justify-self: end;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--ink);
+  background: var(--paper);
+}
+
+.loewe-stage::before,
+.loewe-stage::after {
+  content: "";
+  position: absolute;
+  border: 1px solid var(--ink);
+}
+
+.loewe-stage::before {
+  inset: 18% 11%;
+  border-radius: 50%;
+}
+
+.loewe-stage::after {
+  inset: 31% 18%;
+  background: var(--ink);
+}
+
+.loewe-stage span,
+.loewe-stage strong,
+.loewe-stage i,
+.netflix-stage span,
+.netflix-stage strong,
+.netflix-stage i {
+  position: absolute;
+  z-index: 2;
+  font-style: normal;
+}
+
+.loewe-stage span,
+.netflix-stage span {
+  top: 24px;
+  left: 25px;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+}
+
+.loewe-stage strong {
+  top: 50%;
+  left: 50%;
+  color: var(--paper);
+  font-family: var(--serif);
+  font-size: clamp(2.8rem, 4.7vw, 5.4rem);
+  font-weight: 400;
+  letter-spacing: -0.06em;
+  transform: translate(-50%, -50%);
+}
+
+.loewe-stage i,
+.netflix-stage i {
+  right: 25px;
+  bottom: 24px;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+}
+
+/* Netflix social data case */
+.netflix-stage {
+  background-image: radial-gradient(var(--ink) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+.netflix-stage::before {
+  content: "";
+  position: absolute;
+  inset: 16%;
+  background: var(--paper);
+  border: 1px solid var(--ink);
+  transform: rotate(-6deg);
+}
+
+.netflix-stage strong {
+  top: 50%;
+  left: 50%;
+  width: 72%;
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: clamp(2.7rem, 4.5vw, 5.1rem);
+  font-weight: 400;
+  letter-spacing: -0.06em;
+  line-height: 0.78;
+  text-align: center;
+  transform: translate(-50%, -50%) rotate(-6deg);
+}
+
+.three-up-impact {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .lg-stage span {
   top: 24px;
   left: 25px;
@@ -1658,6 +1771,7 @@ footer {
   .gucci-stage { width: 58%; opacity: 0.32; position: absolute; right: -5%; }
   .adobe-stage { width: 58%; opacity: 0.26; position: absolute; right: -5%; }
   .lg-stage { width: 58%; opacity: 0.26; position: absolute; right: -5%; }
+  .loewe-stage, .netflix-stage { width: 58%; opacity: 0.26; position: absolute; right: -5%; }
   .execution-system { grid-template-columns: 1fr; }
   .optimization-note { padding: 55px 40px; }
   .next-case { grid-template-columns: 150px 1fr 30px; }
@@ -1687,9 +1801,12 @@ footer {
   .gucci-stage { width: 78%; right: -22%; opacity: 0.22; }
   .adobe-stage { width: 78%; right: -22%; opacity: 0.2; }
   .lg-stage { width: 78%; right: -22%; opacity: 0.2; }
+  .loewe-stage, .netflix-stage { width: 78%; right: -22%; opacity: 0.2; }
   .gucci-hero h1 { font-size: clamp(3rem, 14vw, 4.9rem); }
   .adobe-hero h1 { font-size: clamp(3rem, 13.5vw, 4.8rem); }
   .lg-hero h1 { font-size: clamp(3rem, 13.2vw, 4.75rem); }
+  .loewe-hero h1, .netflix-hero h1 { font-size: clamp(3rem, 13.1vw, 4.7rem); }
+  .three-up-impact { grid-template-columns: 1fr; }
   .phase-proof > div { min-height: 170px; padding-inline: 8px; }
   .channel-role-grid article { min-height: 320px; padding-inline: 8px; }
   .social-proof-grid > div { min-height: 170px; padding-inline: 8px; }
