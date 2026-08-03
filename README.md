@@ -8,7 +8,8 @@ Published with GitHub Pages.
 
 ## Editing
 
-- `index.html` contains the AINOTE case study and selected-work index.
+- `index.html` contains the personal welcome page, About, experience timeline and six-brand work wall.
+- `ainote.html` contains the AINOTE Korea GTM, creative strategy and social-commerce case study.
 - `gucci.html` contains the Gucci Cruise 2024 Seoul case study.
 - `adobe.html` contains the Adobe Korea culturalized growth and aespa × Premiere Pro case study.
 - `lg.html` contains the LG global launch system, LG gram strategy and B2B demand-generation case study.
