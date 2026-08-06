@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap");
+
 :root {
   --paper: #f4f1ea;
   --paper-light: #faf8f3;
@@ -3447,4 +3449,80 @@ footer {
   .motion-stage span { animation: none; opacity: 0; }
   .motion-stage span:first-child { opacity: 1; transform: translateY(0); }
   .minimal-case { transition: none; }
+}
+
+/* -------------------------------------------------------------------------- */
+/* Case studies — typography aligned with homepage v3                         */
+/* -------------------------------------------------------------------------- */
+
+.case-page {
+  --paper: #f7f7f4;
+  --paper-light: #fbfbf8;
+  --ink: #11110f;
+  --graphite: #67675f;
+  --serif: "Manrope", "Fivo Sans", "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+  --sans: "Manrope", "Fivo Sans", "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+  background: var(--paper);
+  font-family: var(--sans);
+  letter-spacing: -0.015em;
+}
+
+.case-page .site-header { min-height: 74px; }
+.case-page .identity {
+  font-size: 0.98rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+.case-page .site-header nav {
+  gap: clamp(18px, 2.4vw, 38px);
+  color: var(--graphite);
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.035em;
+  text-transform: uppercase;
+}
+
+.case-page .hero { min-height: 560px; }
+.case-page .hero h1 {
+  max-width: 940px;
+  font-size: clamp(3rem, 5vw, 5rem);
+  font-weight: 500;
+  line-height: 0.98;
+  letter-spacing: -0.07em;
+}
+.case-page .hero-tags { font-size: clamp(0.92rem, 1.15vw, 1.08rem); }
+.case-page .hero-metric strong { font-weight: 500; }
+
+.case-page :is(.intro-grid h2, .leadership-grid h2, .about-grid h2) {
+  font-size: clamp(2.75rem, 4.6vw, 4.8rem);
+  font-weight: 500;
+  line-height: 1;
+}
+
+.case-page :is(.chapter-head h2, .direction-hero h2, .experiment-title h2, .impact-head h2, .contact-section h2) {
+  font-size: clamp(3rem, 5.25vw, 5.6rem);
+  font-weight: 500;
+  line-height: 0.98;
+}
+
+.case-page :is(.job-card h3, .message-layer h3, .timeline-stage h3, .experiment-copy h3, .next-case strong, .signal-note p, .role-boundary) {
+  font-weight: 500;
+}
+
+.case-page .impact-grid strong,
+.case-page .creative-card > div:not(.creative-visual) strong,
+.case-page .typography-creative strong { font-weight: 500; }
+
+.case-page .learning-section blockquote {
+  font-size: clamp(3.25rem, 6vw, 6.4rem);
+  font-weight: 500;
+  line-height: 0.96;
+}
+
+@media (max-width: 760px) {
+  .case-page .site-header { min-height: 64px; }
+  .case-page .site-header nav a:nth-child(1),
+  .case-page .site-header nav a:nth-child(4) { display: none; }
+  .case-page .hero { min-height: auto; }
+  .case-page .hero h1 { font-size: clamp(2.7rem, 12vw, 4rem); }
 }
