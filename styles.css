@@ -1157,6 +1157,743 @@ footer {
 }
 
 
+/* AINOTE case study v2 — visual-first, series-level story */
+.ainote-v2 img,
+.ainote-v2 video,
+.ainote-v2 iframe {
+  filter: grayscale(1);
+}
+
+.ainote-hero {
+  width: min(100% - 96px, 1400px);
+  min-height: 720px;
+  height: min(78vh, 880px);
+  margin-inline: auto;
+  position: relative;
+  overflow: hidden;
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.ainote-hero-image,
+.ainote-hero-shade {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.ainote-hero-image {
+  object-fit: cover;
+  object-position: 63% 48%;
+  transform: scale(1.015);
+}
+
+.ainote-hero-shade {
+  background:
+    linear-gradient(90deg, rgba(10, 10, 9, 0.94) 0%, rgba(10, 10, 9, 0.78) 37%, rgba(10, 10, 9, 0.18) 73%, rgba(10, 10, 9, 0.05) 100%),
+    linear-gradient(0deg, rgba(10, 10, 9, 0.4), transparent 42%);
+}
+
+.ainote-hero-copy {
+  width: min(78%, 1040px);
+  min-height: 100%;
+  padding: 84px 0 72px 58px;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.ainote-hero .eyebrow,
+.ainote-promise .eyebrow,
+.ainote-creators .eyebrow {
+  color: #c4c3bd;
+}
+
+.ainote-hero h1 {
+  max-width: 1120px;
+  margin: 26px 0 24px;
+  font-family: var(--serif);
+  font-size: clamp(4rem, 6.2vw, 6.7rem);
+  font-weight: 400;
+  letter-spacing: -0.06em;
+  line-height: 0.94;
+}
+
+.ainote-hero-copy > p:not(.eyebrow) {
+  max-width: 680px;
+  margin: 0;
+  color: #d7d5cf;
+  font-size: clamp(1rem, 1.45vw, 1.28rem);
+  line-height: 1.62;
+}
+
+.ainote-hero-link {
+  width: fit-content;
+  margin-top: 38px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(244, 241, 234, 0.72);
+  display: flex;
+  gap: 55px;
+  align-items: center;
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.ainote-metrics .hero-metric strong {
+  font-size: clamp(2.2rem, 3.7vw, 3.9rem);
+}
+
+.ainote-overview-grid {
+  display: grid;
+  grid-template-columns: 1.08fr 0.92fr;
+  gap: clamp(55px, 9vw, 145px);
+  margin-top: 70px;
+}
+
+.ainote-overview-grid h2,
+.ainote-section-head h2 {
+  max-width: 960px;
+  margin: 24px 0 0;
+  font-family: var(--serif);
+  font-size: clamp(3.2rem, 5.3vw, 6rem);
+  font-weight: 400;
+  letter-spacing: -0.055em;
+  line-height: 0.97;
+}
+
+.ainote-overview-copy > p {
+  margin: 0 0 22px;
+  color: #3f3f3b;
+  font-size: 1.04rem;
+  line-height: 1.72;
+}
+
+.ainote-role-list {
+  margin: 48px 0 0;
+  border-top: 1px solid var(--hairline);
+}
+
+.ainote-role-list div {
+  display: grid;
+  grid-template-columns: 105px 1fr;
+  gap: 18px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--hairline);
+}
+
+.ainote-role-list dt,
+.ainote-launch-meta > span,
+.ainote-rank-proof span,
+.ainote-video-card figcaption > span,
+.ainote-creator-card > div:last-child > span,
+.ainote-howto > div:nth-child(2) > span,
+.ainote-performance-note span {
+  color: var(--graphite);
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.ainote-role-list dd {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.ainote-overview-visual {
+  min-height: 600px;
+  margin: 90px 0 0;
+  position: relative;
+  overflow: hidden;
+  background: var(--ink);
+}
+
+.ainote-overview-visual img {
+  width: 100%;
+  height: 100%;
+  min-height: 600px;
+  object-fit: cover;
+}
+
+.ainote-overview-visual figcaption {
+  width: min(90%, 630px);
+  position: absolute;
+  left: 34px;
+  bottom: 30px;
+  padding: 25px 28px;
+  background: rgba(18, 18, 17, 0.9);
+  color: var(--paper);
+}
+
+.ainote-overview-visual figcaption span {
+  color: #aaa9a2;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.ainote-overview-visual figcaption strong {
+  margin-top: 12px;
+  display: block;
+  font-family: var(--serif);
+  font-size: clamp(1.65rem, 2.8vw, 3rem);
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.ainote-promise,
+.ainote-creators {
+  width: 100%;
+  padding-block: 126px;
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.ainote-inner {
+  width: min(100% - 96px, 1400px);
+  margin-inline: auto;
+}
+
+.ainote-promise .chapter-marker,
+.ainote-creators .chapter-marker {
+  color: #aaa9a2;
+}
+
+.ainote-promise .chapter-marker span,
+.ainote-creators .chapter-marker span {
+  border-color: #66665f;
+  color: var(--paper);
+}
+
+.ainote-section-head {
+  width: min(100%, 1010px);
+  margin-top: 68px;
+}
+
+.ainote-section-head > p:last-child {
+  max-width: 720px;
+  margin: 28px 0 0;
+  color: var(--graphite);
+  font-size: 1.04rem;
+  line-height: 1.7;
+}
+
+.ainote-section-head.inverse-copy > p:last-child {
+  color: #b8b6af;
+}
+
+.ainote-promise-grid {
+  display: grid;
+  grid-template-columns: 1.18fr 0.91fr 0.91fr;
+  gap: 18px;
+  margin-top: 82px;
+}
+
+.ainote-promise-card {
+  min-width: 0;
+  margin: 0;
+  border: 1px solid #4f4f49;
+  background: #151514;
+}
+
+.ainote-promise-card img {
+  width: 100%;
+  height: 510px;
+  display: block;
+  object-fit: cover;
+}
+
+.ainote-promise-card.landscape img {
+  object-position: 55% center;
+}
+
+.ainote-promise-card figcaption {
+  min-height: 220px;
+  padding: 28px;
+}
+
+.ainote-promise-card figcaption > span {
+  color: #8f8e87;
+  font-size: 0.65rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.ainote-promise-card h3 {
+  margin: 48px 0 15px;
+  font-family: var(--serif);
+  font-size: clamp(2rem, 3vw, 3.1rem);
+  font-weight: 400;
+  letter-spacing: -0.045em;
+}
+
+.ainote-promise-card p {
+  margin: 0;
+  color: #aaa9a2;
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+.ainote-launches,
+.ainote-creative,
+.ainote-takeaway {
+  border-top: 1px solid rgba(184, 182, 175, 0.45);
+}
+
+.ainote-launch-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 82px;
+  border-top: 1px solid var(--hairline);
+  border-bottom: 1px solid var(--hairline);
+}
+
+.ainote-launch-card {
+  min-width: 0;
+  padding: 36px 38px 38px;
+}
+
+.ainote-launch-card + .ainote-launch-card {
+  border-left: 1px solid var(--hairline);
+}
+
+.ainote-launch-meta strong {
+  margin: 54px 0 8px;
+  display: block;
+  font-family: var(--serif);
+  font-size: clamp(3.2rem, 5vw, 5.6rem);
+  font-weight: 400;
+  letter-spacing: -0.055em;
+  line-height: 0.95;
+}
+
+.ainote-launch-meta p {
+  margin: 0;
+  color: var(--graphite);
+  font-size: 0.76rem;
+}
+
+.ainote-launch-shot {
+  margin-top: 45px;
+  padding: 15px;
+  border: 1px solid var(--hairline);
+  display: block;
+  overflow: hidden;
+  background: #fff;
+}
+
+.ainote-launch-shot img {
+  width: 100%;
+  display: block;
+  transition: transform 260ms ease;
+}
+
+.ainote-launch-shot:hover img,
+.ainote-launch-shot:focus-visible img {
+  transform: scale(1.018);
+}
+
+.ainote-rank-proof {
+  display: grid;
+  grid-template-columns: minmax(150px, 0.74fr) 1fr;
+  gap: 25px;
+  margin-top: 28px;
+  padding-top: 28px;
+  border-top: 1px solid var(--hairline);
+  align-items: center;
+}
+
+.ainote-rank-proof img {
+  width: 100%;
+  display: block;
+}
+
+.ainote-rank-proof h3 {
+  margin: 12px 0 10px;
+  font-family: var(--serif);
+  font-size: clamp(1.6rem, 2.4vw, 2.55rem);
+  font-weight: 400;
+  letter-spacing: -0.035em;
+  line-height: 1.05;
+}
+
+.ainote-rank-proof p {
+  margin: 0;
+  color: var(--graphite);
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+
+.ainote-source-link {
+  margin-top: 34px;
+  padding: 15px 0;
+  border-top: 1px solid var(--hairline);
+  border-bottom: 1px solid var(--hairline);
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.77rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.ainote-video-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 82px;
+}
+
+.ainote-video-card {
+  min-width: 0;
+  margin: 0;
+  border: 1px solid var(--hairline);
+  background: rgba(250, 248, 243, 0.42);
+}
+
+.ainote-video-card video {
+  width: 100%;
+  aspect-ratio: 1;
+  display: block;
+  object-fit: cover;
+  background: #e8e6df;
+}
+
+.ainote-video-card figcaption {
+  min-height: 190px;
+  padding: 23px 22px 28px;
+}
+
+.ainote-video-card h3 {
+  margin: 52px 0 0;
+  font-family: var(--serif);
+  font-size: clamp(1.55rem, 2vw, 2.2rem);
+  font-weight: 400;
+  letter-spacing: -0.035em;
+  line-height: 1.08;
+}
+
+.ainote-performance-note {
+  display: grid;
+  grid-template-columns: 0.8fr 1.4fr 0.8fr;
+  align-items: center;
+  gap: 44px;
+  margin-top: 70px;
+  padding: 46px 48px;
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.ainote-performance-note > div:last-child {
+  text-align: right;
+}
+
+.ainote-performance-note span {
+  color: #96958e;
+}
+
+.ainote-performance-note strong {
+  margin-top: 13px;
+  display: block;
+  font-family: var(--serif);
+  font-size: clamp(2.8rem, 4.2vw, 4.8rem);
+  font-weight: 400;
+  letter-spacing: -0.05em;
+  line-height: 1;
+}
+
+.ainote-performance-note p {
+  margin: 0;
+  color: #b8b6af;
+  line-height: 1.65;
+}
+
+.ainote-creator-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 82px;
+}
+
+.ainote-creator-card {
+  border: 1px solid #4f4f49;
+  background: #151514;
+}
+
+.ainote-youtube-frame {
+  aspect-ratio: 16 / 9;
+  background: #050505;
+}
+
+.ainote-youtube-frame iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+.ainote-creator-card > div:last-child {
+  padding: 28px 30px 30px;
+}
+
+.ainote-creator-card > div:last-child > span,
+.ainote-howto > div:nth-child(2) > span {
+  color: #8f8e87;
+}
+
+.ainote-creator-card h3,
+.ainote-howto h3 {
+  margin: 28px 0 17px;
+  font-family: var(--serif);
+  font-size: clamp(2rem, 3vw, 3.25rem);
+  font-weight: 400;
+  letter-spacing: -0.04em;
+}
+
+.ainote-creator-card a {
+  color: #aaa9a2;
+  font-size: 0.76rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.ainote-howto {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.58fr) 1fr 50px;
+  gap: 38px;
+  align-items: center;
+  margin-top: 18px;
+  padding: 18px;
+  border: 1px solid #4f4f49;
+  background: #151514;
+}
+
+.ainote-howto-thumb {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.ainote-howto-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ainote-howto h3 {
+  margin: 20px 0 11px;
+}
+
+.ainote-howto p {
+  margin: 0;
+  color: #8f8e87;
+  font-size: 0.82rem;
+}
+
+.ainote-howto i {
+  font-size: 1.7rem;
+  font-style: normal;
+}
+
+.ainote-takeaway {
+  text-align: center;
+}
+
+.ainote-takeaway .chapter-marker {
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.ainote-takeaway blockquote {
+  max-width: 1120px;
+  margin: 90px auto 36px;
+  font-family: var(--serif);
+  font-size: clamp(4rem, 7.5vw, 8.6rem);
+  letter-spacing: -0.065em;
+  line-height: 0.92;
+}
+
+.ainote-takeaway > p {
+  max-width: 700px;
+  margin: 0 auto;
+  color: var(--graphite);
+  font-size: 1.02rem;
+  line-height: 1.7;
+}
+
+.ainote-evidence-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 58px;
+}
+
+.ainote-evidence-links a {
+  padding: 13px 17px;
+  border: 1px solid var(--hairline);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: background 180ms ease, color 180ms ease;
+}
+
+.ainote-evidence-links a:hover,
+.ainote-evidence-links a:focus-visible {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+@media (max-width: 1080px) {
+  .ainote-hero,
+  .ainote-inner {
+    width: min(100% - 48px, 1400px);
+  }
+
+  .ainote-hero-copy {
+    width: 88%;
+    padding-left: 42px;
+  }
+
+  .ainote-promise-grid,
+  .ainote-video-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .ainote-promise-card img {
+    height: 470px;
+  }
+
+  .ainote-performance-note {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ainote-performance-note p {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+}
+
+@media (max-width: 760px) {
+  .ainote-hero,
+  .ainote-inner {
+    width: min(100% - 32px, 1400px);
+  }
+
+  .ainote-hero {
+    min-height: 690px;
+    height: 82vh;
+  }
+
+  .ainote-hero-image {
+    object-position: 68% center;
+  }
+
+  .ainote-hero-shade {
+    background: linear-gradient(90deg, rgba(10, 10, 9, 0.92), rgba(10, 10, 9, 0.48) 78%, rgba(10, 10, 9, 0.24));
+  }
+
+  .ainote-hero-copy {
+    width: 100%;
+    padding: 60px 20px 48px;
+  }
+
+  .ainote-hero h1 {
+    font-size: clamp(3.4rem, 15vw, 5rem);
+  }
+
+  .ainote-overview-grid,
+  .ainote-launch-grid,
+  .ainote-creator-grid,
+  .ainote-promise-grid,
+  .ainote-video-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ainote-overview-grid {
+    gap: 45px;
+  }
+
+  .ainote-overview-visual,
+  .ainote-overview-visual img {
+    min-height: 470px;
+  }
+
+  .ainote-overview-visual img {
+    object-position: 65% center;
+  }
+
+  .ainote-overview-visual figcaption {
+    left: 15px;
+    bottom: 15px;
+    padding: 20px;
+  }
+
+  .ainote-promise,
+  .ainote-creators {
+    padding-block: 90px;
+  }
+
+  .ainote-promise-card img {
+    height: 440px;
+  }
+
+  .ainote-launch-card {
+    padding-inline: 0;
+  }
+
+  .ainote-launch-card + .ainote-launch-card {
+    border-left: 0;
+    border-top: 1px solid var(--hairline);
+    padding-top: 58px;
+  }
+
+  .ainote-rank-proof {
+    grid-template-columns: 0.72fr 1fr;
+  }
+
+  .ainote-video-card figcaption {
+    min-height: 170px;
+  }
+
+  .ainote-performance-note {
+    grid-template-columns: 1fr;
+    padding: 38px 28px;
+  }
+
+  .ainote-performance-note > div:last-child {
+    text-align: left;
+  }
+
+  .ainote-performance-note p {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .ainote-howto {
+    grid-template-columns: 1fr 36px;
+    gap: 22px;
+  }
+
+  .ainote-howto-thumb {
+    grid-column: 1 / -1;
+  }
+
+  .ainote-howto > div:nth-child(2) {
+    padding: 8px 4px 14px;
+  }
+
+  .ainote-takeaway blockquote {
+    margin-top: 72px;
+    font-size: 4.45rem;
+  }
+}
+
+
 /* Selected case studies and Gucci Seoul case */
 .selected-work-section,
 .more-work {
