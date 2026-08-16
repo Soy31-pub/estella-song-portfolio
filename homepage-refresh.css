@@ -126,23 +126,6 @@ a { color: inherit; text-decoration: none; }
   object-position: right center;
 }
 
-.hero-photo::after {
-  position: absolute;
-  z-index: 1;
-  inset: -1px;
-  background:
-    linear-gradient(90deg, var(--warm) 0%, rgba(238, 227, 220, .9) 7%, rgba(238, 227, 220, .34) 18%, transparent 31%),
-    linear-gradient(180deg, rgba(238, 227, 220, .98), transparent) left top / 46% 52px no-repeat,
-    linear-gradient(180deg, rgba(238, 227, 220, .35), transparent) 56% top / 30% 28px no-repeat,
-    linear-gradient(180deg, rgba(238, 227, 220, .85), transparent) right top / 26% 52px no-repeat,
-    linear-gradient(0deg, rgba(238, 227, 220, .98), transparent) left bottom / 30% 52px no-repeat,
-    linear-gradient(0deg, rgba(238, 227, 220, .25), transparent) center bottom / 58% 28px no-repeat,
-    linear-gradient(0deg, rgba(238, 227, 220, .9), transparent) right bottom / 12% 52px no-repeat,
-    linear-gradient(270deg, rgba(238, 227, 220, .95), transparent) right / 60px 100% no-repeat;
-  content: "";
-  pointer-events: none;
-}
-
 .hero-content {
   position: relative;
   z-index: 2;
@@ -605,7 +588,7 @@ a { color: inherit; text-decoration: none; }
     aspect-ratio: 1672 / 941;
   }
 
-  .hero-photo img { object-fit: contain; object-position: center; }
+  .hero-photo img { object-fit: contain; object-position: right center; }
   .eyebrow { margin-bottom: 42px; font-size: 10px; white-space: normal; }
   .hero h1 { font-size: clamp(49px, 12vw, 66px); }
   .hero-intro { max-width: 500px; font-size: 16px; }
