@@ -110,16 +110,16 @@ a { color: inherit; text-decoration: none; }
   justify-self: end;
   width: min(100%, 470px);
   margin: 0;
-  overflow: hidden;
-  aspect-ratio: 4 / 5;
-  background: #eaded6;
+  background: transparent;
 }
 
 .hero-photo img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 66% center;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, .82) 7%, #000 16%, #000 100%);
+  mask-image: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, .82) 7%, #000 16%, #000 100%);
 }
 
 .hero-content {
