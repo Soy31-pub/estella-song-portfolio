@@ -1093,15 +1093,22 @@
 }
 
 .adobe-up-hero-copy {
-  width: min(62%, 790px);
+  width: min(66%, 900px);
   padding: clamp(36px, 4.8vw, 68px);
 }
 
 .adobe-up-hero h1 {
-  max-width: 760px;
+  max-width: none;
   margin: 22px 0 24px;
-  font-size: clamp(3.35rem, 4.35vw, 4.15rem);
+  font-size: clamp(2.85rem, 3.65vw, 3.55rem);
   line-height: 1.02;
+}
+
+.adobe-up-hero h1 span,
+.adobe-up-csm-proof h3 span,
+.adobe-up-takeaway h2 span {
+  display: block;
+  white-space: nowrap;
 }
 
 .adobe-up-deck {
@@ -1188,8 +1195,8 @@
 .adobe-up-signal-layout {
   margin-top: 54px;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 270px;
-  gap: clamp(52px, 8vw, 130px);
+  grid-template-columns: minmax(0, 1fr) minmax(210px, 260px);
+  gap: clamp(40px, 5.5vw, 90px);
   align-items: start;
 }
 
@@ -1226,12 +1233,19 @@
 }
 
 .adobe-up-opportunity-visual {
+  width: 100%;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .adobe-up-opportunity-visual img {
-  width: 100%;
+  width: auto;
+  height: 420px;
+  max-width: 100%;
   display: block;
+  object-fit: contain;
 }
 
 .adobe-up-opportunity-visual figcaption {
@@ -1314,9 +1328,15 @@
 
 .adobe-up-client-visual {
   width: min(100%, 430px);
+  margin: 28px 0 0;
 }
 
 .adobe-up-client-visual img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1246 / 620;
+  display: block;
+  object-fit: contain;
   border-color: var(--adobe-line);
 }
 
@@ -1359,8 +1379,18 @@
 }
 
 .adobe-up-takeaway h2 {
-  font-size: clamp(2.65rem, 3.7vw, 4.25rem);
-  line-height: 1.02;
+  font-size: clamp(2.25rem, 3vw, 3rem);
+  line-height: 1.04;
+}
+
+.adobe-up-csm-proof h3 {
+  margin-top: 26px;
+  font-size: clamp(1.55rem, 2vw, 2rem);
+  line-height: 1.04;
+}
+
+.adobe-up-more strong {
+  font-size: clamp(1.9rem, 3vw, 3.2rem);
 }
 
 .adobe-up-takeaway .adobe-up-takeaway-copy {
@@ -1463,7 +1493,7 @@
   .adobe-up-hero h1 {
     margin: 18px 0;
     color: #ffffff;
-    font-size: clamp(1.7rem, 7.2vw, 2.15rem);
+    font-size: clamp(1.15rem, 5.2vw, 1.35rem);
     line-height: 1.03;
     overflow-wrap: normal;
   }
@@ -1570,6 +1600,11 @@
   .adobe-up-opportunity-visual {
     width: 170px;
     margin-inline: auto;
+  }
+
+  .adobe-up-opportunity-visual img {
+    width: 100%;
+    height: auto;
   }
 
   .adobe-up-opportunity-visual figcaption {
@@ -1730,7 +1765,8 @@
   }
 
   .adobe-up-csm-proof h3 {
-    font-size: 1.25rem;
+    margin-top: 20px;
+    font-size: 1rem;
   }
 
   .adobe-up-takeaway-grid {
@@ -1759,6 +1795,11 @@
   }
 
   .adobe-up-more strong {
-    font-size: 1.75rem;
+    font-size: 1.35rem;
+  }
+
+  .adobe-up-takeaway h2 {
+    font-size: 1.1rem;
+    line-height: 1.08;
   }
 }
