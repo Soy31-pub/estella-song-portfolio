@@ -91,7 +91,7 @@ a { color: inherit; }
 .cover-copy h1 {
   max-width: 750px;
   margin: 16px 0 16px;
-  font-size: clamp(42px, 4.8vw, 72px);
+  font-size: clamp(38px, 4.1vw, 60px);
   font-weight: 500;
   letter-spacing: -.06em;
   line-height: .96;
@@ -101,7 +101,7 @@ a { color: inherit; }
   max-width: 650px;
   margin: 0 0 20px;
   color: #45413d;
-  font-size: clamp(14px, 1.2vw, 18px);
+  font-size: clamp(13px, 1.05vw, 16px);
   line-height: 1.48;
 }
 
@@ -265,7 +265,7 @@ a.media-photo:focus-visible img { transform: scale(1.025); }
 .metric + .metric { padding-left: 20px; border-left: 1px solid var(--line); }
 
 .metric strong {
-  font-size: clamp(26px, 3vw, 42px);
+  font-size: clamp(24px, 2.5vw, 36px);
   font-weight: 500;
   letter-spacing: -.05em;
 }
@@ -305,7 +305,7 @@ a.media-photo:focus-visible img { transform: scale(1.025); }
 .detail-head h2 {
   max-width: 860px;
   margin: 0;
-  font-size: clamp(32px, 3.7vw, 54px);
+  font-size: clamp(28px, 3vw, 46px);
   font-weight: 500;
   letter-spacing: -.055em;
   line-height: .98;
@@ -354,7 +354,7 @@ a.media-photo:focus-visible img { transform: scale(1.025); }
 
 .step h3 {
   margin: 0;
-  font-size: clamp(20px, 2vw, 29px);
+  font-size: clamp(18px, 1.65vw, 24px);
   font-weight: 500;
   letter-spacing: -.045em;
   line-height: 1.04;
@@ -377,7 +377,7 @@ a.media-photo:focus-visible img { transform: scale(1.025); }
 
 .takeaway blockquote {
   margin: 0;
-  font-size: clamp(25px, 2.8vw, 39px);
+  font-size: clamp(22px, 2.2vw, 32px);
   font-weight: 500;
   letter-spacing: -.05em;
   line-height: 1.02;
@@ -484,11 +484,11 @@ a.media-photo:focus-visible img { transform: scale(1.025); }
   .site-header nav { gap: 13px; }
   .cover-grid { gap: 18px; padding: 18px 0 14px; }
   .eyebrow, .screen-label, .media-slot span, .fact dt, .metric span, .step-index, .proof-kicker, .micro-label { font-size: 8px; }
-  .cover-copy h1 { margin: 10px 0 10px; font-size: 34px; line-height: .98; }
-  .lede { margin-bottom: 13px; font-size: 12px; line-height: 1.38; }
+  .cover-copy h1 { margin: 9px 0 9px; font-size: 28px; line-height: 1; }
+  .lede { margin-bottom: 11px; font-size: 10.5px; line-height: 1.4; }
   .facts { grid-template-columns: 1fr; }
   .fact, .fact:nth-child(even) { padding: 7px 0; border-left: 0; }
-  .fact dd { margin-top: 2px; font-size: 10px; }
+  .fact dd { margin-top: 2px; font-size: 9px; }
   .media-board { grid-template-columns: 1.45fr .75fr; grid-template-rows: repeat(2, 102px); min-height: 0; gap: 6px; }
   .media-board--duo { grid-template-columns: 1.18fr .82fr; grid-template-rows: 225px; }
   .media-board--balanced { grid-template-columns: 1fr 1fr; }
@@ -501,15 +501,15 @@ a.media-photo:focus-visible img { transform: scale(1.025); }
   .media-slot::after { right: 8px; bottom: 4px; font-size: 24px; }
   .metric { display: block; padding: 10px 6px 9px 0; }
   .metric + .metric { padding-left: 8px; }
-  .metric strong { display: block; font-size: 23px; }
+  .metric strong { display: block; font-size: 20px; }
   .metric span { display: block; margin-top: 2px; font-size: 7px; }
 
   .case-detail .inner { display: block; }
   .detail-head { grid-template-columns: 56px 1fr; gap: 10px; padding: 14px 0; }
   .screen-label { gap: 5px; }
   .screen-label b { width: 28px; height: 28px; font-size: 8px; }
-  .detail-head h2 { font-size: 28px; line-height: 1; }
-  .detail-head > p { grid-column: 1 / 3; font-size: 10px; line-height: 1.35; }
+  .detail-head h2 { font-size: 23px; line-height: 1.02; }
+  .detail-head > p { grid-column: 1 / 3; font-size: 9px; line-height: 1.38; }
   .case-gallery {
     display: flex;
     height: 168px;
@@ -523,16 +523,16 @@ a.media-photo:focus-visible img { transform: scale(1.025); }
   .gallery-card figcaption { right: 6px; bottom: 6px; left: 6px; padding: 5px 6px; font-size: 6px; }
   .detail-grid { gap: 16px; padding: 14px 0; }
   .step { grid-template-columns: 35px 105px 1fr; gap: 7px; padding: 11px 0; }
-  .step h3 { font-size: 15px; }
-  .step p { font-size: 9px; line-height: 1.35; }
+  .step h3 { font-size: 13px; }
+  .step p { font-size: 8.5px; line-height: 1.38; }
   .takeaway { grid-template-columns: 62px 1fr; gap: 8px; padding-top: 14px; }
-  .takeaway blockquote { font-size: 20px; line-height: 1.04; }
+  .takeaway blockquote { font-size: 17px; line-height: 1.08; }
   .proof-card { display: grid; grid-template-columns: 1fr; grid-template-rows: 150px auto auto; }
   .proof-card .media-slot,
   .proof-card .proof-visual { grid-row: auto; border-right: 0; border-bottom: 1px solid #3e3c38; }
   .proof-visual figcaption { right: 6px; bottom: 6px; left: 6px; padding: 5px 6px; font-size: 6px; }
   .proof-metrics { padding: 10px 11px 5px; }
-  .proof-metric strong { font-size: 22px; }
+  .proof-metric strong { font-size: 19px; }
   .proof-metric span { font-size: 7px; }
   .proof-note { padding: 0 11px 11px; font-size: 8px; }
   .detail-footer { grid-template-columns: 1fr; gap: 10px; padding-top: 10px; }
